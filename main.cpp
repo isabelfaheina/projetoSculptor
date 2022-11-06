@@ -28,7 +28,7 @@ int main(void) {
   exemplo.setColor(0.02, 0.02, 0.940, 0.9);
   exemplo.putEllipsoid(30, 15, 30, 7, 3, 10);
 
-  exemplo.cutEllipsoid(30, 15, 25, 5, 2, 14);
+  exemplo.cutEllipsoid(30, 15, 25, 5, 2, 14); //cortar elipsoide
 
   std::cout << "O ARQUIVO exemplo.off FOI CRIADO!" << std::endl;
   
