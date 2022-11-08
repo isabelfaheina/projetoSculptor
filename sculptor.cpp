@@ -149,10 +149,10 @@ void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int r) {
                 (pow(k - zcenter, 2)) <=
             (pow(r, 2))) {
           this->v[i][j][k].isOn = true;
-          this->v[i][j][k].r = r;
-          this->v[i][j][k].g = g;
-          this->v[i][j][k].b = b;
-          this->v[i][j][k].a = a;
+          this->v[i][j][k].r = this->r;
+          this->v[i][j][k].g = this->g;
+          this->v[i][j][k].b = this->b;
+          this->v[i][j][k].a = this->a;
         }
       }
     }
