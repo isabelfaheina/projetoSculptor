@@ -19,7 +19,7 @@ int main(void) {
   exemplo.cutBox(4, 7, 4, 7, 0, 7); //cortar cubo
 
   //implementacao de esfera
-  exemplo.setColor(0.745, 0.02, 0.325, 0.9);
+  exemplo.setColor(0.745, 0.245, 0.325, 0.9);
   exemplo.putSphere(15, 15, 15, 7);
 
   exemplo.cutSphere(12, 15, 12, 4); //cortar esfera
