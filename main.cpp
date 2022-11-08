@@ -32,7 +32,7 @@ int main(void) {
 
   std::cout << "O ARQUIVO exemplo.off FOI CRIADO!" << std::endl;
   
-  exemplo.writeOFF((char *) "exemplo.off"); //geracao do arquivo
+  exemplo.writeOFF("exemplo.off"); //geracao do arquivo
 
 
   //----------------------------FIM DO EXEMPLO---------------------------//
@@ -92,7 +92,7 @@ int main(void) {
   
   std::cout << "O ARQUIVO bob.off FOI CRIADO!" << std::endl;
 
-  bob.writeOFF((char *) "bob.off");
+  bob.writeOFF("bob.off");
 
   //----------------------FIM DO ESCULTOR PRINCIPAL----------------//
   
