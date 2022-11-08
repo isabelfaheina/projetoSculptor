@@ -130,14 +130,14 @@ void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1) {
       for (j = y0; j < y1; j++) {
         for (k = z0; k < z1; k++) {
           this->v[i][j][k].show = false;
-          // desativa um bloco de voxes se as posições forem válidos
+          // desativa um bloco de voxels se as posições forem válidos
         }
       }
     }
   }
 }
 
-// implementação de membro de atiação de esfera
+// implementação de membro de ativação de esfera
 void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int r) {
   int i;
   int j;
@@ -149,10 +149,10 @@ void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int r) {
                 (pow(k - zcenter, 2)) <=
             (pow(r, 2))) {
           this->v[i][j][k].show = true;
-          this->v[i][j][k].r = this->r;
-          this->v[i][j][k].g = this->g;
-          this->v[i][j][k].b = this->b;
-          this->v[i][j][k].a = this->a;
+          this->v[i][j][k].r = this -> r;
+          this->v[i][j][k].g = this -> g;
+          this->v[i][j][k].b = this -> b;
+          this->v[i][j][k].a = this -> a;
         }
       }
     }
@@ -180,7 +180,7 @@ void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int r) {
 
 // implementação de membro de ativação do elipsoide
 void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx,
-int ry, int rz) {
+                            int ry, int rz) {
   int i;
   int j;
   int k;
@@ -193,7 +193,7 @@ int ry, int rz) {
                 (pow(k - zcenter, 2) / pow(rz, 2)) <=
             1) {
 
-          this->v[i][j][k].isOn = true;
+          this->v[i][j][k].show = true;
 
           this->v[i][j][k].r = this->r;
           this->v[i][j][k].g = this->g;
@@ -209,7 +209,7 @@ int ry, int rz) {
 
 // implementação do membro de desativação do elipsoide
 void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx,
-int ry, int rz) {
+                            int ry, int rz) {
   int i, j, k;
 
   for (i = 0; i < nx; i++) {
@@ -229,7 +229,7 @@ int ry, int rz) {
 }
 
 // implementação do membro de gravação de arquivo
-void Sculptor::writeOFF(char *filename) {
+void Sculptor::writeOFF(const char *filename) {
   int i, j, k;
   int n_voxels;
   int n_vertices;
