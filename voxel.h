@@ -4,7 +4,7 @@
 struct Voxel {
   float r,g,b; // Cores
   float a; // Trasnparencia
-  bool isOn; //define se o voxel sera impresso
+  bool show; //define se o voxel sera impresso
 };
 
 #endif
