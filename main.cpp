@@ -61,13 +61,13 @@ int main(void) {
 
   //corpo do abacaxi
 
-  bob.setColor(0.02, 0.378, 0.03, 0.8);
+  bob.setColor(0.832, 0.378, 0.03, 0.8);
   bob.putSphere(15, 2, 15, 5);
 
-  bob.setColor(0.02, 0.378, 0.03, 0.8);
+  bob.setColor(0.832, 0.378, 0.03, 0.8);
   bob.putSphere(15, 4, 15, 5);
 
-  bob.setColor(0.02, 0.378, 0.03, 0.8);
+  bob.setColor(0.832, 0.378, 0.03, 0.8);
   bob.putSphere(15, 6, 15, 5);
 
   //coroa do abacaxi
